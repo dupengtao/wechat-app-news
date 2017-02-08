@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/recent/recent",
+    "pages/article/article"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "IT新闻",
+    "navigationBarTextStyle":"black"
+  }
+}

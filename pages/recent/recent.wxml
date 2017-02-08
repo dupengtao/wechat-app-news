@@ -1,0 +1,24 @@
+
+<!--recent.wxml-->
+<view class="container">
+  <scroll-view scroll-y="true" style="height: {{systemInfo.windowHeight}}px" lower-threshold="500px" bindscrolltolower="lower">
+    <block wx:for="{{entry}}">
+      <view class="HolyGrail" catchtap="redictDetail" data-news-id="{{item.id._text}}">
+        <view class="header">
+          {{index}} {{item.title._text}}
+        </view>
+        <view class="HolyGrail-body">
+          <view class="HolyGrail-content">{{item.summary._text}}</view>
+          <view class="HolyGrail-nav"></view>
+          <view class="HolyGrail-ads"></view>
+        </view>
+        <view class="footer">
+          发布于 {{item.published._text}}
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+  <loading hidden="{{hidden}}">
+    加载中...
+  </loading>
+</view>

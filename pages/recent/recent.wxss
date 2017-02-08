@@ -1,0 +1,71 @@
+.container {
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+  background-color: #DBDFE8;
+}
+
+.HolyGrail {
+  display: flex;
+  flex-direction: column;
+  /*padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background-color: #26262b;*/
+  
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 4px 1px 1px #ccc;
+  margin: 8px;
+  position: relative;
+}
+
+.header {
+  flex: none;
+  padding: 16rpx;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  /*background-color: #f2f2f2;*/
+  border-bottom: 1px solid #d1d1d1;
+  color: #2196F3;
+}
+
+.footer {
+  flex: none;
+  padding: 16rpx;
+  font-size: 14px;
+  /*background-color: #f2f2f2;*/
+  border-top: 1px solid #d1d1d1;
+  color: #a2a1a4;
+  letter-spacing: 1.5px;
+}
+
+.HolyGrail-body {
+  display: flex;
+  /*flex: 1;*//*min-height: 300rpx;*//*background-color: darkcyan;*/
+  /*background-color: #f2f3f0;*/
+}
+
+.HolyGrail-content {
+  flex: 1;
+  padding: 14rpx;
+  font-size: 14px;
+  text-indent: 2em;
+  line-height: 1.4;
+  overflow: hidden;
+  color: #878789;
+  letter-spacing: 1.5px;
+}
+
+.HolyGrail-nav, .HolyGrail-ads {
+  /* 两个边栏的宽度设为12em *//*flex: 0 0 100rpx;*/
+  flex: none;
+}
+
+.HolyGrail-nav {
+  /* 导航放到最左边 */
+  order: -1;
+}
